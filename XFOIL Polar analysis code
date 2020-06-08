@@ -1,0 +1,147 @@
+XFOIL   c>  load naca633618.dat
+
+ Labeled airfoil file.  Name:  NACA 63(3)-618
+
+ Number of input coordinate points:  51
+ Counterclockwise ordering
+ Max thickness =     0.180137  at x =   0.346
+ Max camber    =     0.030517  at x =   0.550
+
+  LE  x,y  =  -0.00070   0.00529  |   Chord =   1.00071
+  TE  x,y  =   1.00000   0.00000  |
+
+ Current airfoil nodes set from buffer airfoil nodes (  51 )
+
+ WARNING: Poor input coordinate distribution
+          Excessive panel angle   40.8  at i =  26
+          Repaneling with PANE and/or PPAR suggested
+           (doing GDES,CADD before repaneling _may_
+            improve excessively coarse LE spacing
+
+ XFOIL   c>  pane
+
+ Sharp trailing edge
+
+ Paneling parameters used...
+   Number of panel nodes       160
+   Panel bunching parameter    1.000
+   TE/LE panel density ratio   0.150
+   Refined-area/LE panel density ratio    0.200
+   Top    side refined area x/c limits  1.000 1.000
+   Bottom side refined area x/c limits  1.000 1.000
+
+ XFOIL   c>  oper
+
+.OPERi   c>  visc
+
+Enter Reynolds number   r>  3e6
+
+ M  =    0.0000
+ Re =   3000000
+
+.OPERv   c>  pacc
+
+ Polar  1 newly created for accumulation
+ Airfoil archived with polar: NACA 63(3)-618
+
+Enter  polar save filename  OR  <return> for no file   s>  save1
+
+ New polar save file available
+
+Enter  polar dump filename  OR  <return> for no file   s>  dump1
+
+ New polar dump file available
+
+ Polar accumulation enabled
+
+.OPERva   c>  aseq -10
+
+Enter last  alfa value (deg)   r>  20
+
+Enter alfa increment   (deg)   r>  1
+
+.OPERva   c>  aseq -10 20 1
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+
+
+Sequence halted since previous  4 points did not converge
+ Last-converged  alpha =  13.000    CL =   1.58500
+ 
+ .OPERva   c>  pacc
+
+ Polar accumulation disabled
+
+.OPERv   c>  re
+
+ Currently...
+
+ Re =   3000000
+
+Enter new Reynolds number   r>  10e6
+
+.OPERv   c>  pacc
+
+ Polar  2 newly created for accumulation
+ Airfoil archived with polar: NACA 63(3)-618
+
+Enter  polar save filename  OR  <return> for no file   s>  save3
+
+ New polar save file available
+
+Enter  polar dump filename  OR  <return> for no file   s>  dump3
+
+ New polar dump file available
+
+ Polar accumulation enabled
+
+.OPERva   c>  aseq -10 20 1
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+ Sequence halted since previous  4 points did not converge
+ Last-converged  alpha =  16.000    CL =   1.79347
+
+.OPERva   c>  pplo
+
+.OPERva   c>  pacc
+
+ Polar accumulation disabled
+
+.OPERv   c>  Re 15e6
+
+.OPERv   c>  pacc
+
+ Polar  3 newly created for accumulation
+ Airfoil archived with polar: NACA 63(3)-618
+
+Enter  polar save filename  OR  <return> for no file   s>  save5
+
+ New polar save file available
+
+Enter  polar dump filename  OR  <return> for no file   s>
+
+ Polar dump file will NOT be written
+
+ Polar accumulation enabled
+
+.OPERva   c>  aseq -10 20 1
+ Calculating wake trajectory ...
+ Calculating source influence matrix ...
+
+ Solving BL system ...
+ Sequence halted since previous  4 points did not converge
+ Last-converged  alpha =  16.000    CL =   1.83685
+
+.OPERva   c>  pacc
+
+ Polar accumulation disabled
+
+.OPERv   c>  pplo
+
+.OPERv   c>  hard
+ Writing   PostScript to file  plot.ps ...
+
